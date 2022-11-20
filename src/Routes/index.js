@@ -4,9 +4,10 @@ import SDGSInfo from 'components/SDGSInfo'
 export const RoutesWrraper = () => {
     return (
         <Routes>
+            <Route path="/" element={<SDGSInfo />} />
             <Route path="/sdgs" element={<SDGSInfo />} />
-            <Route path="/markdown" element={<SDGSInfo />} />
-            <Route path="/carbonintensity" element={<SDGSInfo />} />
+            <Route path="/markdown" />
+            <Route path="/carbonintensity" />
         </Routes>
     )
 }

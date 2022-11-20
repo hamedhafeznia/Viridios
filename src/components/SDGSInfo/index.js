@@ -32,10 +32,10 @@ export default function SDGSInfo() {
           displayValue="Country"
           onSelect={onSelectValue}
           onRemove={onRemoveValue}
-          keepSearchTerm={true}
         />
       </div>
-      <TableInfo data={selectedValue} />
+
+      {!!selectedValue.length && <TableInfo data={selectedValue} />}
       
       {selectedValue.length >= 2 && (
         <div className='mt-5'>
