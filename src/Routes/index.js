@@ -1,12 +1,12 @@
 import { Routes, Route  } from 'react-router-dom';
-import PageOne from '../components/pageOne'
+import SDGSInfo from 'components/SDGSInfo'
 
 export const RoutesWrraper = () => {
     return (
         <Routes>
-            <Route  path="/one" element={<PageOne />} />
-            {/* not found 404 */}
-            {/* <Route path="*" component="" /> */}
+            <Route path="/sdgs" element={<SDGSInfo />} />
+            <Route path="/markdown" element={<SDGSInfo />} />
+            <Route path="/carbonintensity" element={<SDGSInfo />} />
         </Routes>
     )
 }

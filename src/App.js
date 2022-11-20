@@ -1,17 +1,15 @@
 import { BrowserRouter as Router } from 'react-router-dom'
 import { RoutesWrraper } from './Routes'
+import { Navigation } from 'components/Shared/Navigation'
 
 import './App.css';
 
 function App() {
   return (
     <Router>
+      <Navigation />
       <RoutesWrraper />
     </Router>
-    // <div className="App">
-    //   <div className="container mx-auto bg-gray-200 rounded-xl shadow border p-8 m-10">
-    //   </div>
-    // </div>
   );
 }
 
